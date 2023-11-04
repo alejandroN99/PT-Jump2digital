@@ -18,15 +18,15 @@ Aplicación de una prueba técnica para participar en Jump2Digital. Proporciona 
 - Mongoose
 - Nodemon
 
-
 ## Instrucciones de Instalación
 
 1. Clona este repositorio desde GitHub:
 
    ```bash
    git clone https://github.com/alejandroN99/PT-Jump2digital.git
-   Navega hasta el directorio del proyecto:
    ```
+
+   Navega hasta el directorio del proyecto:
 
 Navega hasta el directorio del proyecto:
 
@@ -49,7 +49,6 @@ Crea un archivo .env en la raíz del proyecto con la siguiente configuración:
 MONGO_DB_CNN="mongodb://127.0.0.1:27017/jump2digital"
 PORT="8080"
 SECRETKEY_JWT="tu_clave_secreta_para_JWT"
-
 
 ## Instrucciones de Uso
 
@@ -137,7 +136,6 @@ A continuación se describen los datos requeridos para interactuar con las rutas
   - `id`: ID de la "skin" a obtener (ID válido en formato MongoDB).
   - Token de autenticación JWT en el encabezado de la solicitud con nombre jw-token.
 
-
 ## Ejecución de Pruebas
 
 Puedes ejecutar pruebas unitarias utilizando el siguiente comando:
@@ -145,5 +143,5 @@ Puedes ejecutar pruebas unitarias utilizando el siguiente comando:
 ```bash
 npm test
 ```
-Este comando ejecutará las pruebas definidas en la carpeta __tests__. 
 
+Este comando ejecutará las pruebas definidas en la carpeta **tests**.
