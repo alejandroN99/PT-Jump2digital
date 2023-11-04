@@ -20,6 +20,12 @@ export const buySkin = async (req: Request, res: Response) => {
 
     const skinToBuy = readSkinsIdAndUpdate(id);
 
+    if(!skinToBuy){
+      return res.status(404).json({
+        msg: "Skin not found",
+      });
+    }
+
     if (!req.user) {
       return res.status(400).json({
         msg: "Error on the req.user",
@@ -27,7 +33,6 @@ export const buySkin = async (req: Request, res: Response) => {
     }
 
     const data = {
-      id: skinToBuy.id,
       name: skinToBuy.name,
       kind: skinToBuy.kind,
       price: skinToBuy.price,
@@ -103,6 +108,12 @@ export const deleteSkin = async (req: Request, res: Response) => {
     const { _id }: { _id: string } = req.user;
 
     const skins = await Skin.findOneAndDelete({ user: _id, _id: id });
+
+    if(!skins){
+      return res.status(404).json({
+        msg: "Skin not found",
+      });
+    }
 
     res.json(skins);
   } catch (error) {

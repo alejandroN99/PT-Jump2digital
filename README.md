@@ -105,14 +105,13 @@ A continuación se describen los datos requeridos para interactuar con las rutas
 
 - **Método HTTP:** GET
 - **Datos Requeridos:**
-  - `id`: ID de la "skin" a comprar (número entero).
   - Token de autenticación JWT en el encabezado de la solicitud con nombre jw-token.
 
 ### `/skins/buy`
 
 - **Método HTTP:** POST
 - **Datos Requeridos:**
-  - `_id`: ID de la "skin" a comprar (ID válido en formato MongoDB).
+  - `id`: ID de la "skin" a comprar (ID, número entero en el body: {"id":1}).
   - Token de autenticación JWT en el encabezado de la solicitud con nombre jw-token.
 
 ### `/skins/myskins`

@@ -1,5 +1,12 @@
 [
   {
+    "id": 1,
+    "name": "Skin 1",
+    "kind": "Type A",
+    "price": 11,
+    "color": "Amarillo"
+  },
+  {
     "id": 2,
     "name": "Skin 2",
     "kind": "Type B",
@@ -17,8 +24,8 @@
     "id": 4,
     "name": "Skin 4",
     "kind": "Type D",
-    "price": 12,
-    "color": "Rosa"
+    "price": 15,
+    "color": "Rojo"
   },
   {
     "id": 5,
@@ -26,5 +33,19 @@
     "kind": "Type E",
     "price": 20,
     "color": "Negro"
+  },
+  {
+    "id": 6,
+    "name": "Skin 6",
+    "kind": "Type G",
+    "price": 20,
+    "color": "Blanco"
+  },
+  {
+    "id": 7,
+    "name": "Skin 7",
+    "kind": "Type F",
+    "price": 28,
+    "color": "Naranja"
   }
 ]

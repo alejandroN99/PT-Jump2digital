@@ -5,7 +5,7 @@ export const generarToken = (payload: {name: string, email: string}) => {
     return new Promise ((res, rej) => {
 
         if(!process.env.SECRETKEY_JWT){
-            return rej("El token no se ha podido generar") 
+            return rej("Token could not be generated") 
         }
 
         jwt.sign(payload, process.env.SECRETKEY_JWT,{
@@ -13,7 +13,7 @@ export const generarToken = (payload: {name: string, email: string}) => {
         } ,(err,token) => {
             if(err) {
                 console.log(err);
-                rej("El token no se ha podido generar")
+                rej("Token could not be generated")
             }else{
                 res(token);
             }

@@ -13,21 +13,9 @@ import { validarToken } from "../middlewares/validar_token";
 
 export const router = express.Router();
 
-router.get(
-  "/available",
-  [validarToken, check("id", "The id is required").isNumeric(), validarCampos],
-  getAllSkins
-);
+router.get("/available", validarToken, getAllSkins);
 
-router.post(
-  "/buy",
-  [
-    validarToken,
-    check("_id", "The mongo id is required").isMongoId(),
-    validarCampos
-  ],
-  buySkin
-);
+router.post("/buy", validarToken, buySkin);
 
 router.get("/myskins", validarToken, mySkins);
 
@@ -37,7 +25,7 @@ router.put(
     validarToken,
     check("color", "The color is required").not().isEmpty(),
     check("name", "The color is required").not().isEmpty(),
-    validarCampos
+    validarCampos,
   ],
   otherColor
 );
@@ -47,7 +35,7 @@ router.delete(
   [
     validarToken,
     check("id", "The mongo id is required").isMongoId(),
-    validarCampos
+    validarCampos,
   ],
   deleteSkin
 );
@@ -57,7 +45,7 @@ router.get(
   [
     validarToken,
     check("id", "The mongo id is required").isMongoId(),
-    validarCampos
+    validarCampos,
   ],
   getSkin
 );
