@@ -50,6 +50,7 @@ Crea un archivo `.env` en la raíz del proyecto con la siguiente configuración:
 MONGO_DB_CNN="mongodb://127.0.0.1:27017/jump2digital"
 PORT="8080"
 SECRETKEY_JWT="tu_clave_secreta_para_JWT"
+```
 
 
 ## Instrucciones de Uso
