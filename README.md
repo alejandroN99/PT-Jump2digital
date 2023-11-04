@@ -42,13 +42,15 @@ npm install
 
 ## Configuración
 
-Variables de Entorno
+### Variables de Entorno
 
-Crea un archivo .env en la raíz del proyecto con la siguiente configuración:
+Crea un archivo `.env` en la raíz del proyecto con la siguiente configuración:
 
+```plaintext
 MONGO_DB_CNN="mongodb://127.0.0.1:27017/jump2digital"
 PORT="8080"
 SECRETKEY_JWT="tu_clave_secreta_para_JWT"
+
 
 ## Instrucciones de Uso
 
@@ -60,17 +62,21 @@ Para iniciar la aplicación, utiliza el siguiente comando:
 npm start
 ```
 
+## Uso de la Aplicación
+
 La aplicación se ejecutará en el puerto definido en tu archivo de variables de entorno (por defecto, 8080). Puedes acceder a la API a través de un navegador web o una herramienta como Postman.
 
-Rutas de la API
-/user/register: Registro de usuarios.
-/user/auth: Autenticación de usuarios y obtencion de token.
-/skins/available: Obtener todas las "skins" disponibles.
-/skins/buy: Comprar una "skin".
-/skins/myskins: Obtener las "skins" del usuario.
-/skins/color: Cambiar el color de una "skin" existente.
-/skins/delete/:id: Eliminar una "skin" por su ID.
-/skins/getskin/:id: Obtener una "skin" por su ID.
+## Rutas de la API
+
+- **/user/register**: Registro de usuarios.
+- **/user/auth**: Autenticación de usuarios y obtención de token.
+- **/skins/available**: Obtener todas las "skins" disponibles.
+- **/skins/buy**: Comprar una "skin".
+- **/skins/myskins**: Obtener las "skins" del usuario.
+- **/skins/color**: Cambiar el color de una "skin" existente.
+- **/skins/delete/:id**: Eliminar una "skin" por su ID.
+- **/skins/getskin/:id**: Obtener una "skin" por su ID.
+
 
 Para interactuar con estas rutas, utiliza herramientas como Postman o realiza peticiones HTTP desde tu aplicación.
 
