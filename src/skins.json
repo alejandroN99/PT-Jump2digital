@@ -1,0 +1,30 @@
+[
+  {
+    "id": 2,
+    "name": "Skin 2",
+    "kind": "Type B",
+    "price": 15,
+    "color": "Verde"
+  },
+  {
+    "id": 3,
+    "name": "Skin 3",
+    "kind": "Type C",
+    "price": 22,
+    "color": "Azul"
+  },
+  {
+    "id": 4,
+    "name": "Skin 4",
+    "kind": "Type D",
+    "price": 12,
+    "color": "Rosa"
+  },
+  {
+    "id": 5,
+    "name": "Skin 5",
+    "kind": "Type E",
+    "price": 20,
+    "color": "Negro"
+  }
+]
